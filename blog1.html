@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+    
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 06:40:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marko.</title>
+    <link rel="icon" type="image/png" href="./favicon.ico"/>
+    <meta name="description" content="page description here">
+
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/css/uikit.min.css" as="style">
+    <link rel="preload" href="./assets/css/theme/main.css" as="style">
+
+    <script src="./assets/js/app-head.js"></script>
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="./assets/css/theme/main.css">
+    <link rel="stylesheet" href="./assets/css/updates.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B5JJP7FY91');
+    </script>
+</head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport="">
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center" data-uk-scrollspy-nav="closest: li; offset: 40; scroll: true;">
+                            <li><a href="#about">About.</a></li>
+                            <li><a href="#works">Works.</a></li>
+                            <li><a href="#clients">Clients.</a></li>
+                            <li><a href="#blog">Blog.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start a project form -->
+        <div id="start-project" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog dark:uk-background-gray-100">
+                <button class="uk-modal-close-full uk-close-large uk-flex-middle dark:uk-text-gray-10" type="button">
+                    <span class="uk-text-bold">Close</span>
+                    <i class="material-icons uk-icon-medium">close</i>
+                </button>
+                <div class="uk-section uk-section-2xlarge@m">
+                    <div class="uk-margin-auto uk-width-xlarge@m">
+                        <header class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">Start a project</h2>
+                        </header>
+                        <form class="uk-form-stacked uk-margin-large-top@m">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-fullname">Full Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-fullname" type="text" placeholder="Your name" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-email">Email Address</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-email" type="email" placeholder="Your email" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin" hidden>
+                                <label class="uk-form-label uk-text-overline" for="form-stacked-select">Looking for:</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="form-stacked-select">
+                                        <option>Branding</option>
+                                        <option>Web Design</option>
+                                        <option>Web Development</option>
+                                        <option>E-Commerce</option>
+                                        <option>SEO</option>
+                                        <option>Maintenace</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-budget">Your Budget:</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-budget" type="text" placeholder="ex: +$1000" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-brief">Brief:</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" id="form-breif" placeholder="Please go into as much detail as possible." rows="5" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin-medium">
+                                <button class="uk-button uk-button-large uk-button-primary uk-width-expand dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80">Send Brief</button>
+                            </div>
+
+                        </form>
+                        <p class="uk-text-meta uk-text-center">If you would rather contact me, here's my LinkedIn : <a href="https://www.linkedin.com/in/marko-pavkov-90a6a021b/" target="_blank">Marko Pavkov</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+
+            <!-- Header: Location -->
+            <div class="uni-header-location uk-text-xsmall dark:uk-text-white uk-visible@l">
+                <p class="uk-margin-remove">Belgrade, Serbia</p>
+            </div>
+
+            <!-- Header: Section indicator -->
+            <div class="uni-header-section-indicator uk-text-xsmall dark:uk-text-white uk-visible@l">
+                <ul class="uk-list">
+                    <li data-selector=".uni-article">Reading now</li>
+                    <li data-selector=".uni-blog-posts">Related articles</li>
+                    <li data-selector=".uni-cta-footer">Get in touch</li>
+                </ul>
+            </div>
+
+            <!-- Header: Social -->
+            <div class="uni-header-social dark:uk-text-white uk-visible@l">
+                <ul class="uk-flex-column uk-subnav uk-subnav-medium">
+                    <li>
+                        <a href="https://www.linkedin.com/in/marko-pavkov-90a6a021b/"
+                        target="_blank">
+                            <i class="brand-linkedin uk-icon-small"><span class="sr-only">LinkedIn Icon</span></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Header -->
+            <header class="uni-header uk-position-top">
+                <div class="uni-header-navbar uk-scrollnav-header" data-uk-sticky="top: 120; animation: uk-animation-slide-top">
+                    <div class="uk-container uk-container-large">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar="">
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left uk-flex-1">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html">Marko.</a>
+                                    <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html">Marko.</a>
+                                </div>
+
+                                <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                    <div class="uk-navbar-item uk-visible@m">
+                                        <a href="#start-project" class="uk-link-expand uk-link-underline dark:uk-text-white" data-uk-toggle="">
+                                            <span class="uk-text-bold">Let’s talk</span>
+                                            <i class="material-icons-round">arrow_forward</i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-navbar-item uk-hidden@m">
+                                        <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article -->
+            <article class="uni-article uk-section-large uk-section-2xlarge@m uk-padding-3xlarge-top">
+
+                <div class="uk-container">
+
+                    <header class="uk-flex-center uk-text-center uk-margin-large-bottom uk-margin-2xlarge-bottom@m" id="read_more">
+                        <div>
+                            <span class="uk-text-overline">Backend</span>
+                            <h1 class="uk-h2 uk-h1@s uk-heading-hero@m uk-width-3xlarge@m uk-margin-medium-top@m">
+                                What makes Laravel the best backend framework.
+                            </h1>
+                            <ul class="uk-subnav uk-subnav-dot uk-flex-center uk-text-muted uk-margin-medium-top@m">
+                                <li><span>by</span>&nbsp;<span> 
+                                    marko pavkov</span></li>
+                                <li>24 july 2021</li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <img src="./assets/images/posts/post-1.jpg" alt="Post title" width="1920" height="1260">
+
+                    <div class="uk-margin-xlarge-top uk-margin-2xlarge-top@m">
+                        <div class="uk-container uk-container-small">
+                            <p class="uk-text-xlarge@m">Due to the enormous demand for online applications and server-side scripting, PHP has undoubtedly become one of the most popular languages in recent years. PHP developers uses a variety of frameworks to create web apps. Scalability, security, maintainability, architecture, and performance are all criteria considered while selecting this framework. This article will go over the features of Laravel that have led to it being regarded as the best PHP framework. Let's get started!.</p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                Points We Will Cover in This Article :
+                            </h2>
+                            <ul>
+                                <li><p>
+                                    Open Souce and Community
+                                </p></li>
+                                <li><p>                                
+                                Extensive Documentation
+                                </p></li>
+                                <li><p>
+                                    Performance
+                                </p></li>
+                                <li><p>
+                                    Security
+                                </p></li>
+                                <li><p>
+                                    Scalability and Speed
+                                </p></li>
+                                <li><p>
+                                    Eloquent Object-Relational Mappers (ORM)
+                                </p></li>
+                                <li><p>
+                                    Open Souce and Community
+                                </p></li>
+                                <li><p>
+                                    Templating Engines
+                                </p></li>
+                                <li><p>
+                                    Strong object-oriented programming prerequisit
+                                </p></li>
+                            </ul>
+                            <p class="uk-text-xlarge@m uk-margin-large-top@m">Let's begin by defining Laravel. Laravel is a web application framework with expressive, elegant syntax and a previously created base that allows you to create without worrying about the tiny details. Laravel is a prominent PHP framework for web development, with 64k+ ratings on GitHub. Despite ranking 7 on PHP Benchmarks' list of top-performing web development PHP frameworks, it tops our list due to its large community, rich feature set, and ease of use. Let's go through some of the aspects that make Laravel the best framework.</p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m uk-margin-large-top@m">Open Source and Community</h2>
+                            <p class="uk-text-xlarge@m ">
+                                Laravel is a free and open-source web development framework. You do not have to pay any licence fees to use Laravel. Laravel has a large developer community that may assist you when you get stuck when building your projects, especially for newbies who may want assistance at some point in their professional journey. It has incredible support from the PHP development community. As a result, the Laravel wheels are continually turning. From its inception in 2011 until the time of writing, there have been 20 major releases, with Laravel 8 being the most recent stable version. LTS versions are also available from the Laravel web framework community..</p>
+                                <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m uk-margin-large-top@m">Extensive Documentation</h2>
+                            <p class="uk-text-xlarge@m ">
+                                Laravel has extensive documentation to enable developers to get started. Everything in Laravel is documented, It also has API documentation with lists of all the classes and methods declared in Laravel to enable you to follow the right naming conventions. Everything you need to get you off the hook is available in the documentation.</p>
+                                <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m uk-margin-large-top@m">Performance</h2>
+                            <p class="uk-text-xlarge@m ">
+                                According to a Google study, 53% of web users tenders to leave a site that takes longer than 3 seconds to load. Most sites take about 15 seconds to load. That's how much performance matters to our web application. Laravel has built-in quick wins that can boost the performance of the web application by bypassing the route processing, caching all the required routing information, it can be boosted by using sessions, and optimizing the garbage collection process to have an improved task execution.</p>
+                           
+                                <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m uk-margin-large-top@m">Security</h2>
+                                <p class="uk-text-xlarge@m ">
+                                Laravel aims to make implementing authentication very simple and secure. In fact, almost everything is configured for you out of the box and you hardly have to do anything to set. When you set up user authentication, Laravel creates all the important components such as the user model, the register, the login controller as well as the corresponding views. Saving developers the time and security issues they may encounter doing it themselves or their way. Laravel also delivers a simple method to establish authorization reasoning and control access to the protected resources.</p>
+                                <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m uk-margin-large-top@m">Conclusion</h2>
+                            <p class="uk-text-xlarge@m ">
+                                In this post, we have been exposed to some of the facts that qualify Laravel as the 1# backend Framework. Laravel 8 comes with exciting new features like app/Models Directory, Controllers Routing Namespacing, Attributes on Extended Blade Components, Better Syntax for Event Listening, Queueable Anonymous Event Listeners, and other amazing features that will ease your development.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="uk-margin-xlarge-top">
+                        <div class="uk-container uk-container-small">
+                            <div class="uk-grid uk-flex-between" data-uk-grid="">
+                                <div>
+                                    <ul class="uk-subnav">
+                                        <li><a href="minimal-blogf210.html?category=ux+design">#php</a></li>
+                                        <li><a href="minimal-blog4b9f.html?category=planing">#laravel</a></li>
+                                        <li><a href="minimal-blog9a34.html?category=design+ideas">#backend</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+             <!-- Blog Posts -->
+             <div id="blog" class="uni-blog-posts uk-section-large uk-section-2xlarge@m uk-background-white dark:uk-background-gray-90 dark:uk-text-gray-10">
+                <div class="uk-container">
+                    <header class="uk-grid uk-flex-bottom uk-flex-between" data-uk-grid="">
+                        <div class="uk-width-expand@m">
+                            <h2 class="uk-h2 uk-h1@m uk-margin-remove">Related <span class="uk-text-primary dark:uk-text-gray-60">Articles.</span></h2>
+                        </div>
+                    </header>
+                    <div class="uk-grid uk-grid-medium uk-child-width-1-3@m uk-margin-xlarge-top uk-margin-2xlarge-top@m" data-uk-grid="">
+                        <div>
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="368" height="368"></canvas>
+                                <img src="./assets/images/posts/post-1.jpg" alt="image" data-uk-cover>
+                                <a href="blog1.html" class="uk-position-cover"><span class="sr-only">Post Link</span></a>
+                            </div>
+                            <div class="uk-panel uk-margin-top uk-margin-large-top@m">
+                                <ul class="uk-subnav uk-subnav-dot uk-text-muted dark:uk-text-gray-40">
+                                    <li><span>24 july 2021</span></li>
+                                    <li><span>Backend</span></li>
+                                </ul>
+                                <h3 class="uk-h4 uk-h3@m uk-text-normal uk-margin-medium-top@m">
+                                    <a href="blog1.html" class="uk-link-reset">What makes Laravel the best backend framework.</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="368" height="368"></canvas>
+                                <img src="./assets/images/posts/post-2.jpg" alt="image" data-uk-cover>
+                                <a href="blog2.html" class="uk-position-cover"><span class="sr-only">Post Link</span></a>
+                            </div>
+                            <div class="uk-panel uk-margin-top uk-margin-large-top@m">
+                                <ul class="uk-subnav uk-subnav-dot uk-text-muted dark:uk-text-gray-40">
+                                    <li><span>2 April, 2021</span></li>
+                                    <li><span>frameworks</span></li>
+                                </ul>
+                                <h3 class="uk-h4 uk-h3@m uk-text-normal uk-margin-medium-top@m">
+                                    <a href="blog2.html" class="uk-link-reset">
+                                        The Top of Node.js Frameworks.
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="368" height="368"></canvas>
+                                <img src="./assets/images/posts/post-3.jpg" alt="image" data-uk-cover>
+                                <a href="blog3.html" class="uk-position-cover"><span class="sr-only">Post Link</span></a>
+                            </div>
+                            <div class="uk-panel uk-margin-top uk-margin-large-top@m">
+                                <ul class="uk-subnav uk-subnav-dot uk-text-muted dark:uk-text-gray-40">
+                                    <li><span>2 september 2021</span></li>
+                                    <li><span>frontend</span></li>
+                                </ul>
+                                <h3 class="uk-h4 uk-h3@m uk-text-normal uk-margin-medium-top@m">
+                                    <a href="blog3.html" class="uk-link-reset">
+                                        AngularJS VS React.
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer / cta -->
+            <footer class="uni-cta-footer uk-section-large uk-section-2xlarge@m uk-padding-large-bottom uk-overflow-hidden uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40 uk-dark">
+                <div class="uk-container">
+                    <div>
+                        <div class="uk-width-2xlarge">
+                            <h2 class="uk-h1 uk-heading-hero@m ">I am available to work as your worker.</h2>
+                            <a href="#start-project" class="uk-button uk-button-large uk-button-primary uk-margin-top uk-margin-large-top@m dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80" data-uk-toggle="">
+                                <span>Start a project</span>
+                                <span class="material-icons-round">arrow_forward</span>
+                            </a>
+                        </div>
+                        <div>
+                            <hr class="uk-margin-remove dark:uk-border-white-10">
+
+                            <div class="uk-margin-large-top">
+                                <div class="uk-grid uk-grid-medium@m" data-uk-grid>
+                                    <div class="uk-width-expand@m uk-flex-first@m">
+                                        <span>2021 © Marko.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Initiat Scripts -->
+        <script defer src="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/js/uikit.min.js"></script>
+        <script defer src="./assets/js/responsive-uk-attr.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/jquery%403.6.0/dist/jquery.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/feather-icons%404.28.0/dist/feather.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/typed.js%402.0.12/lib/typed.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/animejs%403.2.1/lib/anime.min.js"></script>
+        <script defer src="./assets/js/app.js"></script>
+        <script defer src="./assets/js/swiper-helper.js"></script>
+        <script defer src="./assets/js/typed-helper.js"></script>
+        <script defer src="./assets/js/anime-helper.js"></script>
+        <script defer src="./assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 06:40:03 GMT -->
+</html>

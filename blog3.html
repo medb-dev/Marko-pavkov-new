@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+    
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 06:40:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marko.</title>
+    <link rel="icon" type="image/png" href="./favicon.ico"/>
+    <meta name="description" content="page description here">
+
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/css/uikit.min.css" as="style">
+    <link rel="preload" href="./assets/css/theme/main.css" as="style">
+
+    <script src="./assets/js/app-head.js"></script>
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="./assets/css/theme/main.css">
+    <link rel="stylesheet" href="./assets/css/updates.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B5JJP7FY91');
+    </script>
+</head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport="">
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center" data-uk-scrollspy-nav="closest: li; offset: 40; scroll: true;">
+                            <li><a href="#about">About.</a></li>
+                            <li><a href="#works">Works.</a></li>
+                            <li><a href="#clients">Clients.</a></li>
+                            <li><a href="#blog">Blog.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start a project form -->
+        <div id="start-project" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog dark:uk-background-gray-100">
+                <button class="uk-modal-close-full uk-close-large uk-flex-middle dark:uk-text-gray-10" type="button">
+                    <span class="uk-text-bold">Close</span>
+                    <i class="material-icons uk-icon-medium">close</i>
+                </button>
+                <div class="uk-section uk-section-2xlarge@m">
+                    <div class="uk-margin-auto uk-width-xlarge@m">
+                        <header class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">Start a project</h2>
+                        </header>
+                        <form class="uk-form-stacked uk-margin-large-top@m">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-fullname">Full Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-fullname" type="text" placeholder="Your name" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-email">Email Address</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-email" type="email" placeholder="Your email" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin" hidden>
+                                <label class="uk-form-label uk-text-overline" for="form-stacked-select">Looking for:</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="form-stacked-select">
+                                        <option>Branding</option>
+                                        <option>Web Design</option>
+                                        <option>Web Development</option>
+                                        <option>E-Commerce</option>
+                                        <option>SEO</option>
+                                        <option>Maintenace</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-budget">Your Budget:</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-budget" type="text" placeholder="ex: +$1000" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-brief">Brief:</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" id="form-breif" placeholder="Please go into as much detail as possible." rows="5" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin-medium">
+                                <button class="uk-button uk-button-large uk-button-primary uk-width-expand dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80">Send Brief</button>
+                            </div>
+
+                        </form>
+                        <p class="uk-text-meta uk-text-center">If you would rather contact me, here's my LinkedIn : <a href="https://www.linkedin.com/in/marko-pavkov-90a6a021b/" target="_blank">Marko Pavkov</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+
+            <!-- Header: Location -->
+            <div class="uni-header-location uk-text-xsmall dark:uk-text-white uk-visible@l">
+                <p class="uk-margin-remove">Belgrade, Serbia</p>
+            </div>
+
+            <!-- Header: Section indicator -->
+            <div class="uni-header-section-indicator uk-text-xsmall dark:uk-text-white uk-visible@l">
+                <ul class="uk-list">
+                    <li data-selector=".uni-article">Reading now</li>
+                    <li data-selector=".uni-blog-posts">Related articles</li>
+                    <li data-selector=".uni-cta-footer">Get in touch</li>
+                </ul>
+            </div>
+
+            <!-- Header: Social -->
+            <div class="uni-header-social dark:uk-text-white uk-visible@l">
+                <ul class="uk-flex-column uk-subnav uk-subnav-medium">
+                    <li>
+                        <a href="https://www.linkedin.com/in/marko-pavkov-90a6a021b/"
+                        target="_blank">
+                            <i class="brand-linkedin uk-icon-small"><span class="sr-only">LinkedIn Icon</span></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Header -->
+            <header class="uni-header uk-position-top">
+                <div class="uni-header-navbar uk-scrollnav-header" data-uk-sticky="top: 120; animation: uk-animation-slide-top">
+                    <div class="uk-container uk-container-large">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar="">
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left uk-flex-1">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html">Marko.</a>
+                                    <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html">Marko.</a>
+                                </div>
+
+                                <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                    <div class="uk-navbar-item uk-visible@m">
+                                        <a href="#start-project" class="uk-link-expand uk-link-underline dark:uk-text-white" data-uk-toggle="">
+                                            <span class="uk-text-bold">Let’s talk</span>
+                                            <i class="material-icons-round">arrow_forward</i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-navbar-item uk-hidden@m">
+                                        <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article -->
+            <article class="uni-article uk-section-large uk-section-2xlarge@m uk-padding-3xlarge-top">
+
+                <div class="uk-container">
+
+                    <header class="uk-flex-center uk-text-center uk-margin-large-bottom uk-margin-2xlarge-bottom@m" id="read_more">
+                        <div>
+                            <span class="uk-text-overline">Frontend</span>
+                            <h1 class="uk-h2 uk-h1@s uk-heading-hero@m uk-width-3xlarge@m uk-margin-medium-top@m">
+                                AngularJS vs React.
+                            </h1>
+                            <ul class="uk-subnav uk-subnav-dot uk-flex-center uk-text-muted uk-margin-medium-top@m">
+                                <li><span>by</span>&nbsp;<span> 
+                                    marko pavkov</span></li>
+                                <li>2 September 2021</li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <img src="./assets/images/posts/post-1.jpg" alt="Post title" width="1920" height="1260">
+
+                    <div class="uk-margin-xlarge-top uk-margin-2xlarge-top@m">
+                        <div class="uk-container uk-container-small">
+                            <p class="uk-text-xlarge@m">In this article, We are comparing 2 most popular technologies for the front end development: Angular and React. We are going to compare them from the project architect and by developers perspective as well as companies perspective.
+                            Comparing Angular and react is very popular topic nowadays. React and Angular are both highly advanced, widely adopted JavaScript technologies that we use to create responsive web apps and interactive single-page applications. The number of JavaScript tools for fast single-page application(SPAs) development is constantly growing, So choosing right framework for web developers is more challenging.</p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                Comparison AngularJS vs React :
+                            </h2>
+                            
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m uk-margin-large-top@m">AngularJS</h2>
+                            <p class="uk-text-xlarge@m uk-margin-large-top@m">
+                                Angular version 2 and above has been around less then React, but if you count in the history of its predecessor, AngularJS, the picture evens out. It’s maintained by Google and used in Analytics, Adwords and Google Fiber. Since AdWords is one of the key projects in Google, it is clear they have made a big bet on it and is unlikely to disappear anytime soon.</p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m uk-margin-large-top@m">React</h2>
+                            <p class="uk-text-xlarge@m ">
+                                
+React is developed and maintained by Facebook and also used in their products like Instagram and WhatsApp. It has been around for roughly four and a half years now, so it’s not exactly new. It’s also one of the most popular projects on GitHub, with about 92,000 stars at the time of writing. Sounds good to me.</p>
+                                <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m uk-margin-large-top@m">Componentization</h2>
+                            <p class="uk-text-xlarge@m ">
+                                <b>AngularJS:</b>
+                            <br>
+                            AngularJS has a very complex and fixed structure because it's based on the Model-View-Controller architecture typical of single-page applications. An object $scope in AngularJS is responsible for the Model part, which is initialized by the Controller and then transformed into HTML to create the View for the user. AngularJS provides many standard services, factories, controllers, directives, and other components.
+                            We break the code into several files in AngularJS. For example, when we create a reusable component with our own directive, controller, and template, we must describe each chunk of code in a separate file. Once we describe our directive, we then add a link to our template in the directive to couple these parts. AngularJS directives represent the template logic for your application. The template is HTML extended with AngularJS directives, generally written as tags or attributes. We also add controllers to provide our models with necessary $scope or context. Controllers are written in separate files as well. When we modularize our application in such a way, we can reuse our template or component in a different part of the website and this is very helpful for the AngularJS Development Company because it saves a lot of time and speeds up the development process.</p>
+                            <p class="uk-text-xlarge@m ">
+                                <b>Data Binding:</b><br>    
+In MVC Patterns the binding is the most important topic to pass any data in uni-direction or bi-directional flow.Data Binding is the data synchronization processes that work between the model and view components.</p>
+                            <p class="uk-text-xlarge@m ">
+                                <b>AngularJS:</b><br>                                  
+Data-binding in Angular apps is the automatic synchronization of data between the model and view components. The way that Angular implements data-binding lets you treat the model as the single-source-of-truth in your application. The view is a projection of the model at all times. When the model changes, the view reflects the change and vice versa. It is simply attachment of data from Model to View or vice-versa in a sync way so that whenever any change occurs to any of model or view, other should show the change and this is sync.</p>
+                            <p class="uk-text-xlarge@m ">
+                                <b>React:</b><br>  
+The best feature in react is Virtual-Dom. React injects data into its rendered views at construct time, be that when the root view is created or via a nested view.React uses one-way data binding, meaning we are able to direct the flow of data only in one direction. Inside the class, the data that’s passed is accessed via the props property of the current context.</p>
+                            <p class="uk-text-xlarge@m ">
+                                <b>Performance:</b><br>  
+                                <b>AngularJS:</b><br>  
+There are two things to take into consideration when we talk about Angular's performance. As we mentioned previously, Angular 1.x and higher relies on two-way data binding. This concept is based on “dirty checking," a mechanism that can make our AngularJS Application Development laggy.
+<br>
+When we bind values in HTML with our model, AngularJS creates a watcher for each binding to track changes in the DOM. Once the View updates, AngularJS compares the new value with the initial value and runs the $digest loop. The $digest loop then checks not only values that have actually changed, but also all others values that are tracked through watchers. This is why performance will decrease a lot if your application has too many watchers.
+<br>
+Another shortcoming of the AngularJS framework is the way it works with the DOM. Unlike React, AngularJS applies changes in the real DOM in the browser. When the real DOM gets updated, the browser has to change many internal values to represent a new DOM. This also has a negative impact on application performance. Poor performance is the main reason why Angular 2 supporters re-worked how Angular changes the program state. Angular 2 and the latest Angular 4 framework versions also feature server-side rendering and one-way data binding similarly to React. Still, Angular 2 and 4 offer two-way data binding as an option.</p>
+                            <p class="uk-text-xlarge@m ">
+                                <b>Resolving Dependencies:</b><br> 
+                                <b>AngularJS:</b><br> 
+                                Dependency Injection is a software design pattern in which components are given their dependencies instead of hardcoding them within the component. This relieves a component from locating the dependency and makes dependencies configurable. This helps in making components reusable, maintainable and testable. AngularJS automatically finds appropriate objects that are injected as the $routeParams, $filter, store, and $scope parameters. There are two functions that make dependency injection possible in the AngularJS framework: $inject and $provide.
+                                <br>
+                                <b>React:</b><br>
+                                The difference between React and AngularJS with regards to dependency injection is that React doesn’t offer any concept of a built-in container for dependency injection. But this doesn't mean we have to think of a method to inject dependencies in our React project. You can use several instruments to inject dependencies automatically in a React application. Such instruments include Browserify, RequireJS, ECMAScript 6 modules which we can use via Babel, ReactJS-di, and so on. The only challenge is to pick a tool to use.</p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <b>Conclusion:</b><br>
+                            </h2>
+                            <p class="uk-text-xlarge@m ">
+                                As you come to the bottom of the discussion, now few points are clear to you on both the frameworks and which is better for web application development. Hence, if you are deciding to choose one of them, then here’s my opinion. If you are trying to develop a basic web app then both can be used. Still, ReactJS is SEO friendly, real-time and compatible with heavy traffic. Whereas, AngularJS offers smooth development and testing along with reliability.
+                            </p>
+                            </div>
+                    </div>
+
+                    <div class="uk-margin-xlarge-top">
+                        <div class="uk-container uk-container-small">
+                            <div class="uk-grid uk-flex-between" data-uk-grid="">
+                                <div>
+                                    <ul class="uk-subnav">
+                                        <li><a href="minimal-blogf210.html?category=ux+design">#react</a></li>
+                                        <li><a href="minimal-blog4b9f.html?category=planing">#angular</a></li>
+                                        <li><a href="minimal-blog9a34.html?category=design+ideas">#comparison</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+             <!-- Blog Posts -->
+             <div id="blog" class="uni-blog-posts uk-section-large uk-section-2xlarge@m uk-background-white dark:uk-background-gray-90 dark:uk-text-gray-10">
+                <div class="uk-container">
+                    <header class="uk-grid uk-flex-bottom uk-flex-between" data-uk-grid="">
+                        <div class="uk-width-expand@m">
+                            <h2 class="uk-h2 uk-h1@m uk-margin-remove">Related <span class="uk-text-primary dark:uk-text-gray-60">Articles.</span></h2>
+                        </div>
+                    </header>
+                    <div class="uk-grid uk-grid-medium uk-child-width-1-3@m uk-margin-xlarge-top uk-margin-2xlarge-top@m" data-uk-grid="">
+                        <div>
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="368" height="368"></canvas>
+                                <img src="./assets/images/posts/post-1.jpg" alt="image" data-uk-cover>
+                                <a href="blog1.html" class="uk-position-cover"><span class="sr-only">Post Link</span></a>
+                            </div>
+                            <div class="uk-panel uk-margin-top uk-margin-large-top@m">
+                                <ul class="uk-subnav uk-subnav-dot uk-text-muted dark:uk-text-gray-40">
+                                    <li><span>24 july 2021</span></li>
+                                    <li><span>Backend</span></li>
+                                </ul>
+                                <h3 class="uk-h4 uk-h3@m uk-text-normal uk-margin-medium-top@m">
+                                    <a href="blog1.html" class="uk-link-reset">What makes Laravel the best backend framework.</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="368" height="368"></canvas>
+                                <img src="./assets/images/posts/post-2.jpg" alt="image" data-uk-cover>
+                                <a href="blog2.html" class="uk-position-cover"><span class="sr-only">Post Link</span></a>
+                            </div>
+                            <div class="uk-panel uk-margin-top uk-margin-large-top@m">
+                                <ul class="uk-subnav uk-subnav-dot uk-text-muted dark:uk-text-gray-40">
+                                    <li><span>2 April, 2021</span></li>
+                                    <li><span>frameworks</span></li>
+                                </ul>
+                                <h3 class="uk-h4 uk-h3@m uk-text-normal uk-margin-medium-top@m">
+                                    <a href="blog2.html" class="uk-link-reset">
+                                        The Top of Node.js Frameworks.
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="368" height="368"></canvas>
+                                <img src="./assets/images/posts/post-3.jpg" alt="image" data-uk-cover>
+                                <a href="blog3.html" class="uk-position-cover"><span class="sr-only">Post Link</span></a>
+                            </div>
+                            <div class="uk-panel uk-margin-top uk-margin-large-top@m">
+                                <ul class="uk-subnav uk-subnav-dot uk-text-muted dark:uk-text-gray-40">
+                                    <li><span>2 september 2021</span></li>
+                                    <li><span>frontend</span></li>
+                                </ul>
+                                <h3 class="uk-h4 uk-h3@m uk-text-normal uk-margin-medium-top@m">
+                                    <a href="blog3.html" class="uk-link-reset">
+                                        AngularJS VS React.
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer / cta -->
+            <footer class="uni-cta-footer uk-section-large uk-section-2xlarge@m uk-padding-large-bottom uk-overflow-hidden uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40 uk-dark">
+                <div class="uk-container">
+                    <div>
+                        <div class="uk-width-2xlarge">
+                            <h2 class="uk-h1 uk-heading-hero@m ">I am available to work as your worker.</h2>
+                            <a href="#start-project" class="uk-button uk-button-large uk-button-primary uk-margin-top uk-margin-large-top@m dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80" data-uk-toggle="">
+                                <span>Start a project</span>
+                                <span class="material-icons-round">arrow_forward</span>
+                            </a>
+                        </div>
+                        <div>
+                            <hr class="uk-margin-remove dark:uk-border-white-10">
+
+                            <div class="uk-margin-large-top">
+                                <div class="uk-grid uk-grid-medium@m" data-uk-grid>
+                                    <div class="uk-width-expand@m uk-flex-first@m">
+                                        <span>2021 © Marko.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Initiat Scripts -->
+        <script defer src="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/js/uikit.min.js"></script>
+        <script defer src="./assets/js/responsive-uk-attr.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/jquery%403.6.0/dist/jquery.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/feather-icons%404.28.0/dist/feather.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/typed.js%402.0.12/lib/typed.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/animejs%403.2.1/lib/anime.min.js"></script>
+        <script defer src="./assets/js/app.js"></script>
+        <script defer src="./assets/js/swiper-helper.js"></script>
+        <script defer src="./assets/js/typed-helper.js"></script>
+        <script defer src="./assets/js/anime-helper.js"></script>
+        <script defer src="./assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 06:40:03 GMT -->
+</html>
